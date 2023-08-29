@@ -2292,7 +2292,7 @@ static const keypads_t keypads_text[] = {
   {0x00, '1'}, {0x10, '2'}, {0x20, '3'}, {0x30, '4'}, {0x40, '5'}, {0x50, '6'}, {0x60, '7'}, {0x70, '8'}, {0x80, '9'}, {0x90, '0'},
   {0x01, 'Q'}, {0x11, 'W'}, {0x21, 'E'}, {0x31, 'R'}, {0x41, 'T'}, {0x51, 'Y'}, {0x61, 'U'}, {0x71, 'I'}, {0x81, 'O'}, {0x91, 'P'},
   {0x02, 'A'}, {0x12, 'S'}, {0x22, 'D'}, {0x32, 'F'}, {0x42, 'G'}, {0x52, 'H'}, {0x62, 'J'}, {0x72, 'K'}, {0x82, 'L'}, {0x92, '_'},
-  {0x03, '-'}, {0x13, 'Z'}, {0x23, 'X'}, {0x33, 'C'}, {0x43, 'V'}, {0x53, 'B'}, {0x63, 'N'}, {0x73, 'M'}, {0x83, S_LARROW[0]}, {0x93, S_ENTER[0]},
+  {0x03, '-'}, {0x13, 'Z'}, {0x23, 'X'}, {0x33, 'C'}, {0x43, 'V'}, {0x53, 'B'}, {0x63, 'N'}, {0x73, 'M'}, {0x83, 0X1A}, {0x93, 0x16},
 };
 #endif
 
@@ -2836,10 +2836,10 @@ num_keypad_click(int c)
 static int
 full_keypad_click(int c)
 {
-  if (c == S_ENTER[0]) { // Enter
+  if (c == 0x16) { // Enter
     return kp_index == 0 ? KP_CANCEL : KP_DONE;
   }
-  if (c == S_LARROW[0]) { // Backspace
+  if (c == 0x1A) { // Backspace
     if (kp_index == 0)
       return KP_CANCEL;
     --kp_index;

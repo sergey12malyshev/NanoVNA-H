@@ -46,6 +46,15 @@ int16_t adc_vbat_read(void);               // Read battery voltage
 /*
  * I2C bus settings
  */
+
+/*******************  Bit definition for I2C_TIMINGR register ****************/
+# define I2C_TIMINGR_SCLL_Pos   (0U)
+# define I2C_TIMINGR_SCLH_Pos   (8U)
+# define I2C_TIMINGR_SDADEL_Pos (16U)
+# define I2C_TIMINGR_SCLDEL_Pos (20U)
+# define I2C_TIMINGR_PRESC_Pos  (28U)
+
+
 #define STM32_I2C_TIMINGS(presc, scldel, sdadel, sclh, scll) ( ((presc)  << I2C_TIMINGR_PRESC_Pos)  \
                                                              | ((scldel) << I2C_TIMINGR_SCLDEL_Pos) \
                                                              | ((sdadel) << I2C_TIMINGR_SDADEL_Pos) \

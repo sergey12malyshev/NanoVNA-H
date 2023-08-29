@@ -105,7 +105,7 @@ PROJECT = ch
 
 # Imported source files and paths
 #CHIBIOS = ../ChibiOS-RT
-CHIBIOS = ChibiOS
+CHIBIOS = ChibiOSold
 PROJ = .
 # Startup files.
 # HAL-OSAL files (optional).
