@@ -18,6 +18,9 @@ Detailed article: https://habr.com/ru/articles/673522/
 ### Build
 Run **buildProjectF072.bat** or **buildProjectF303.bat**
 
+### Programm 
+Run **programFlash.bat**
+
 ==========================================================
 
 DIY的矢量网络分析仪，原项目地址[https://github.com/ttrftech/NanoVNA](https://github.com/ttrftech/NanoVNA),修改了部分电路，增加了电池管理电路，重新设计了PCB。改进了的频率算法，可以利用si5351的奇次谐波扩展支持到900MHz的测量频率，设计了金属屏蔽片，可以减少外部干扰提高测量精度，si5351直接输出的50K-300MHz频段提供优于70dB的动态。最新版本的rev3.5版本硬件可以扩展到1.5GHz以上，更多信息请参考[NanoVNA.com](https://nanovna.com/)。
