@@ -1,6 +1,6 @@
 NanoVNA - Very tiny handheld Vector Network Analyzer
 ==========================================================
-Revision of the project for the possibility of assembly (Adding an old version to the project for a successful build. Taken from the project https://github.com/DiSlord/NanoVNA-D.git; Added missing macros and fixed compilation errors)
+Revision of the project for the possibility of assembly (Adding an old version ChibiOS to the project for a successful build. Taken from the project https://github.com/DiSlord/NanoVNA-D.git; Added missing macros and fixed compilation errors)
 
 ## Build project for Windows 10
 ### Compiler
