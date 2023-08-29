@@ -1,5 +1,25 @@
 NanoVNA - Very tiny handheld Vector Network Analyzer
 ==========================================================
+Revision of the project for the possibility of assembly (Adding an old version to the project for a successful build. Taken from the project https://github.com/DiSlord/NanoVNA-D.git; Added missing macros and fixed compilation errors)
+
+## Build project for Windows 10
+### Compiler
+GCC (gcc-arm-none-eabi) version 5.4.1 20160919
+
+### Configuring the Build system in WINDOWS 10
+1. Download GNU Arm Embedded Toolchain https://developer.arm.com/downloads/-/gnu-rm#:~:text=The%20GNU%20Arm%20Embedded%20Toolchain,Arm%20Cortex%2DR%20processor% 20families or https://launchpad.net/gcc-arm-embedded/+download
+
+2. Download Windows Build Tools binaries (Make, cp, rm, echo, sh...) https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/
+
+3. Register paths in PATH to utilities
+
+Detailed article: https://habr.com/ru/articles/673522/
+
+### Build
+Run **buildProjectF072.bat** or **buildProjectF303.bat**
+
+==========================================================
+
 DIY的矢量网络分析仪，原项目地址[https://github.com/ttrftech/NanoVNA](https://github.com/ttrftech/NanoVNA),修改了部分电路，增加了电池管理电路，重新设计了PCB。改进了的频率算法，可以利用si5351的奇次谐波扩展支持到900MHz的测量频率，设计了金属屏蔽片，可以减少外部干扰提高测量精度，si5351直接输出的50K-300MHz频段提供优于70dB的动态。最新版本的rev3.5版本硬件可以扩展到1.5GHz以上，更多信息请参考[NanoVNA.com](https://nanovna.com/)。
 
 We remade NanoVNA based on edy555 (https://github.com/ttrftech/NanoVNA) , but  modified some circuits, added battery management circuits, and redesigned the PCB. The improved frequency algorithm can use the odd harmonic extension of si5351 to support the measurement frequency up to 900MHz. The metal shield is designed to reduce the external interference and improve the measurement accuracy. The 50k-300MHz frequency range of the si5351 direct output provides better than 70dB dynamic. The latest version of rev3.5 hardware can be extended to above 1.5GHz. For more information, please refer to [NanoVNA.com](https://nanovna.com/) .
