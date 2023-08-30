@@ -129,6 +129,7 @@ const char *info_about[]={
   "Board: " BOARD_NAME,
   "2019-2022 Copyright NanoVNA.com",
   "based on  @DiSlord @edy555 ... source",
+  "fork @sergey12malyshev",
   "Licensed under GPL.",
   "Version: " VERSION " ["\
   "p:"define_to_STR(POINTS_COUNT)", "\
@@ -3385,7 +3386,7 @@ int main(void)
 #if defined(__VNA_ENABLE_DAC__) ||  defined(__LCD_BRIGHTNESS__)
   dac_init();
 #endif
-
+chThdSleepMilliseconds(200); // Wait for aic codec start
 /*
  * restore config and calibration 0 slot from flash memory, also if need use backup data
  */
